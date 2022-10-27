@@ -5,36 +5,101 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style type="text/css">
-		#body{
-			background-image: url(background1.png);
-			background-size: cover;
+	
+	#body{
+			background-color:  rgb(242, 241, 239);
+		}
+			
+		#piece1{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			left: 10%;
+			background-image: url(important.png);
+			background-size: contain;
 			background-repeat: no-repeat;
+			position: absolute;
+			top: 0px;
+		}
+
+		#piece1:hover{
+			width: 250px;
+			height: 250px ;
+			transition: 2s;
+		}
+
+		#piece2{
+			width: 300px;
+			height: 150px;
+			position: relative;
+			left: 42%;
+			background-size: contain;
+			background-image: url(school.png);
+			background-repeat:  no-repeat;
+		}
+
+		#piece2:hover{
+			width: 350px;
+			height: 200px ;
+			transition: 2s;
+		}
+		#piece3{
+			width: 80px;
+			height: 80px;
+			position: relative;
+			left: 46%;
+			background-size: contain;
+			background-image: url(cloud.png);
+			background-repeat:  no-repeat;
+		}
+
+		#piece3:hover{
+			width: 120px;
+			height: 120px ;
+			transition: 2s;
+		}
+
+		#piece4{
+			width: 80px;
+			height: 80px;
+			position: relative;
+			left: 48%;
+			background-size: contain;
+			background-image: url(flower.png);
+			background-repeat:  no-repeat;
+		}
+
+		#piece4:hover{
+			width: 120px;
+			height: 120px ;
+			transition: 2s;
 		}
 
 		#button1{
-			width:100px;
-			height: 100px;
+			width:90px;
+			height: 90px;
 			position: relative;
-			left: 80%;
+			left: 33%;
 			background-image:url(folder.png);
 			background-size: contain;
 			background-repeat: no-repeat;
+
 		}
 
 		#button2{
-			width:100px;
-			height: 100px;
+			width:90px;
+			height: 90px;
 			position: relative;
-			left: 80%;
+			left: 41%;
 			background-image: url(folder.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
 		#button3{
-			width: 100px;
-			height: 100px;
+			width: 90px;
+			height: 90px;
 			position: relative;
-			left: 80%;
+			left: 51%;
 			background-image: url(folder.png);
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -60,6 +125,21 @@
 <div id ="button3">project gerry</div>
 </a>
 
+<a href = "important.html">
+<div id = "piece1">important</div>
+</a>
+
+<a href = "school.html">
+<div id = "piece2">school</div>
+</a>
+
+<a href = "cloud.html">
+<div id = "piece3">cloud</div>
+</a>
+
+<a href = "flower.html">
+<div id = "piece4">flower</div>
+</a>
 
 </body>
 </html>
