@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.yum{
+		width: 200px;
+		backround-position: center;
+		height: 200px;
+		background-image: url(cookie.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: inline-block;
+	}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	function makeCookie () {
+
+	let cookie = document.createElement("div");
+	document.body.appendChild(cookie);
+	cookie.classList.add("yum");
+	}
+
+	setInterval(makeCookie, .00002)
+		
+
+	
+
+</script>
+</body>
+</html>

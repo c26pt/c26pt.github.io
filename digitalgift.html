@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	body{
+			background-color: white;
+		}
+		#gift1{
+			width: 400px;
+			height: 400px;
+			position: relative;
+			background-image: url(firstturkey.png);
+			background-repeat: no-repeat;
+		
+			top: 0px;
+			background-size: contain;
+
+
+
+		}
+	</style>
+</head>
+<body>
+	<audio id="gobble" src= "turkey-gobble1.mp3"> </audio>
+
+	<center><div id = "gift1"> Click to see gift! </div></center>
+	
+
+
+
+
+	<script type="text/javascript">
+		gift1.addEventListener("click", function(){
+			gobble.play();
+			gift1.style.backgroundImage = "url(secondturkey.png)";
+			gift1.innerText = "";
+		})
+	</script>
+</body>
+</html>

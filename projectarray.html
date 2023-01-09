@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	body{
+			background-color: white;
+		}
+
+		#square{
+			width: 400px;
+			height: 400px;
+			position: relative;
+			background-repeat: no-repeat;
+			top: 0px;
+			background-size: contain;
+			
+			
+
+			
+		
+			
+
+
+		}
+
+	</style>
+</head>
+<body>
+<center>
+	<div id = "square"></div>
+	
+	What Geronimo personality are you?
+</center>
+<script type="text/javascript">
+
+let personalities = ["soft.png","shy.png","odd.png","alien.png","normal.png"]
+
+document.addEventListener("click", function(){
+		
+		var random = Math.round(Math.random()*4)
+	console.log(random)
+	square.style.backgroundImage = "url(" + personalities[random] + ")";
+	
+})
+
+</script>
+
+
+</body>
+</html>
