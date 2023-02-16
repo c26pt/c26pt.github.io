@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+		<style type="text/css">
+		.breakfast{
+			width:100px;
+			height:100px;
+			background-color: lightpink;
+			display: inline-block;
+			margin: 3px;
+			background-image: url(https://res.cloudinary.com/hsxfx8igq/image/upload/t_16x9_recipe_image,f_auto/v1608585894/13_vjwdhl.jpg);
+			background-size: contain;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+		}
+</style>
+
+	</script>
+</head>
+<body>
+
+<div>
+	<div></div>
+</div>
+
+	<script type="text/javascript">
+
+		function makeCroissant (x){
+		var croissant = document.createElement("div");
+		document.body.appendChild(croissant);
+		croissant.classList.add("breakfast");
+		//the end goal is to create 1000 croissants. To do this we need to create a function that creates croissants and run it 1000 times. 
+		croissant.innerText = i;
+
+		croissant.addEventListener("click",
+			function(){
+			croissant.style.backgroundImage = "url(https://www.theflavorbender.com/wp-content/uploads/2020/05/French-Croissants-2396-1367x2048.jpg)"
+		})
+}
+
+for(var i=0;i<1000;i=i+1) {makeCroissant()}
+
+		</script>
+</body>
+</html>

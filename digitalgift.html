@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style type="text/css">
-	body{
-			background-color: white;
-		}
+		body{
+				background-color: white;
+			}
+
 		#gift1{
 			width: 400px;
 			height: 400px;
@@ -18,20 +20,22 @@
 			top: 0px;
 			background-size: contain;
 
-
+/*the style tag is located in the head tag. The style tag is where we have our css. We set css to the body div and the div with an id of gift1 */
 
 		}
 	</style>
 </head>
 <body>
+
+	<!-- the body is what is actually shown on the page, the audio tag links to an mp3. The div with the id of gift1 has inner text that says click to see gift. -->
 	<audio id="gobble" src= "turkey-gobble1.mp3"> </audio>
 
-	<center><div id = "gift1"> Click to see gift! </div></center>
+	<center><div id="gift1"> Click to see gift! </div></center>
 	
 
 
 
-
+<!-- there is also a script tag, this allows us to inject javascript. Adding an  event listener to the click which changes the background image and plays the audio and removes the inner text. -->
 	<script type="text/javascript">
 		gift1.addEventListener("click", function(){
 			gobble.play();

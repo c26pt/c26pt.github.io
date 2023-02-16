@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		body{
+			background-color: rgb(222,190,210);
+
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+	document.addEventListener("mousemove",
+		function(event){
+			console.log(event.clientX, event.clientY); 
+			// this is where we see the x and y of our mouse. The corner on the left top side is 0,0.//
+
+		
+	document.body.style.backgroundColor = "rgb(200," + event.clientX + "," +event.clientY+")"; 
+
+	})
+</script>
+</body>
+</html>

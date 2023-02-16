@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Valentines Day Prediction!</title>
+
+	<style type="text/css">
+		body{
+				background-color: white;
+				}
+
+				.square {
+				width: 400px;
+				height: 400px;
+				position: relative;
+				background-repeat: no-repeat;
+				top: 0px;
+				display: inline-block;
+				background-size: contain;
+				background-image: url("card.png");
+				}
+
+	</style>
+</head>
+<body>
+<div id = "cardA" class = "square"></div>
+<div id = "cardB" class = "square"></div>
+<div id = "cardC" class = "square"></div>
+<div id = "cardD" class = "square"></div>
+<div id = "cardE" class = "square"></div>
+<div id = "cardF" class = "square"></div>
+	
+
+<header>
+	valentines day project: predicting how your valentines will go fortune telling
+heart cards
+</header>
+
+
+
+
+	<script type="text/javascript">
+		// let messages = ["1","2","3","4","5"]
+		
+		document.getElementById("cardA").addEventListener("click", function(){
+		
+			var random = Math.round(Math.random()*5)
+			console.log(random)
+			cardA.style.backgroundImage = "url(" + random + ".png)";
+	
+		})
+
+		document.getElementById("cardB").addEventListener("click", function(){
+		
+			var random = Math.round(Math.random()*5)
+			console.log(random)
+			cardB.style.backgroundImage = "url(" + random + ".png)";
+	
+		})
+			document.getElementById("cardC").addEventListener("click", function(){
+		
+			var random = Math.round(Math.random()*5)
+			console.log(random)
+			cardC.style.backgroundImage = "url(" + random + ".png)";
+	
+		})
+			document.getElementById("cardD").addEventListener("click", function(){
+		
+			var random = Math.round(Math.random()*5)
+			console.log(random)
+			cardD.style.backgroundImage = "url(" + random + ".png)";
+	
+		})
+			document.getElementById("cardE").addEventListener("click", function(){
+		
+			var random = Math.round(Math.random()*5)
+			console.log(random)
+			cardE.style.backgroundImage = "url(" + random + ".png)";
+	
+		})
+			document.getElementById("cardF").addEventListener("click", function(){
+		
+			var random = Math.round(Math.random()*5)
+			console.log(random)
+			cardF.style.backgroundImage = "url(" + random + ".png)";
+	
+		})
+
+	</script>
+</body>
+</html>
+
+
