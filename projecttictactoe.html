@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+				background-color: white;
+				}
+
+				.square {
+				width: 850px;
+				height: 850px;
+				position: relative;
+				/*position:  fixed;
+				position: absolute;*/
+				left: 15%;
+				background-repeat: no-repeat;
+				top: 0px;
+			
+				background-size: contain;
+				background-image: url("grid.png");
+				}
+
+				.littleSquare{
+					background-size: contain;
+					background-repeat: no-repeat;
+						display: inline-block;
+					width: 270px;
+					border: 1px solid black;
+					height: 270px;
+/*					float: left;
+
+
+*/				}
+
+	</style>
+</head>
+
+<div id = "grid" class = "square">
+	<div id="box1" class="littleSquare"></div>
+	<div class="littleSquare"></div>
+	<div class="littleSquare"></div>
+
+		<br>
+	<div class="littleSquare"></div>
+	<div class="littleSquare"></div>
+	<div class="littleSquare"></div>
+
+	<br>
+	<div class="littleSquare"></div>
+	<div class="littleSquare"></div>
+	<div class="littleSquare"></div>
+</div>
+
+<body>
+	<script type="text/javascript">
+		document.getElementById("box1").addEventListener("click", function(){
+			box1.style.backgroundImage = "url(circle.png)";
+			console.log(random)
+		})
+
+			
+	</script>
+
+</body>
+</html>
