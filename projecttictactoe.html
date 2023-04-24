@@ -28,7 +28,7 @@
 					background-repeat: no-repeat;
 						display: inline-block;
 					width: 270px;
-					border: 1px solid black;
+					border: 1px whitesmoke;
 					height: 270px;
 /*					float: left;
 
@@ -40,6 +40,16 @@
 
 <div id = "grid" class = "square">
 	<div id="box1" class="littleSquare"></div>
+	<div id="box2" class="littleSquare"></div>
+	<div id="box3" class="littleSquare"></div>
+	<div id="box4" class="littleSquare"></div>
+	<div id="box5" class="littleSquare"></div>
+	<div id="box6" class="littleSquare"></div>
+	<div id="box7" class="littleSquare"></div>
+	<div id="box8" class="littleSquare"></div>
+	<div id="box9" class="littleSquare"></div>
+
+
 	<div class="littleSquare"></div>
 	<div class="littleSquare"></div>
 
@@ -56,13 +66,59 @@
 
 <body>
 	<script type="text/javascript">
-		document.getElementById("box1").addEventListener("click", function(){
-			box1.style.backgroundImage = "url(circle.png)";
-			console.log(random)
-		})
+		// document.getElementById("box1").addEventListener("click", first);
+
+		// 	function first(){
+		// 		box1.style.backgroundImage = "url(circle.png)";
+		// 		console.log()
+		// 		// document.onclick = second;
+		// 	}
+		
+		// document.getElementById("box1").addEventListener("click", second);
+
+		// 	function second(){
+		// 		box1.style.backgroundImage = "url(notcircle.png)";
+		// 		console.log()
+		// 	}
+
+		document.getElementById("box1").addEventListener("click", clickHandler);
+
+			document.getElementById("box1").addEventListener("click", first);
+
+			var clickCount=0;
+
+			function first(){
+				box1.style.backgroundImage = "url(circle.png)";
+				console.log()
 
 			
-	</script>
+				function clickHandler(event){
+  					clickCount++;
+  			if(clickCount==2){
+		
+		event.target.removeEventListener("click");
+    	
+    	document.addEventListener('click', function(){
+  			box1.style.backgroundImage = "url(circle.png)";
+				console.log()
+    	});
+  			}
+// }function first(){
+// 				box1.style.backgroundImage = "url(circle.png)";
+// 				console.log()
+// 				// document.onclick = second;
+// 			}
+		
+// 		document.getElementById("box1").addEventListener("click", second);
+
+// 			function second(){
+// 				box1.style.backgroundImage = "url(notcircle.png)";
+// 				console.log()
+// 			}
+		
+	
+			
+</script>
 
 </body>
 </html>

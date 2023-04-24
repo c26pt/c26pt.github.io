@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		
+		.rat{
+		width: 200px;
+		height: 100px;
+		background-image: url("Geronimocopy.png") ;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		}
+		
+
+
+		
+		
+	</style>
+	<script type="text/javascript">
+		
+		function rats (){
+			var rat = document.createElement("div");
+			document.body.appendChild(rat);
+			rat.classList.add('rat')
+			
+
+			rat.style.left = Math.random()* 1000 + "px"
+			rat.style.top = Math.random()* 1000 + "px"
+		}
+		
+
+		for (var i = 0; i < 100; i = i + 1){
+			rats()
+		}
+			
+				
+			
+
+		
+
+
+	</script>
+</body>
+</html>
